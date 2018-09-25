@@ -1,0 +1,13 @@
+On successive point-of-interest recommendation     world wide web
+
+successive POI不同于传统的POI推荐  用户打算去一个兴趣点的意图会被之前去过的地方影响，例子是，人们通常在去过餐馆之后会去酒吧
+
+successive POI recommendation会把用户当前的位置和兴趣点的距离和POI的转移（连续转移影响）
+
+虽然最近的连续POI推荐方法通过测量POI之间的距离来考虑地理影响，但是大多数POI推荐方法忽略POI所在区域的影响。
+
+ UGSE-LR   首先，将区域划分为网格以估计区域影响   然后，应用边权个性化pageank来建模POI中的连续转化，最后融合用户偏好，区域影响和连续过度影响到统一的推荐框架。 适合于中等数据集
+
+PEU-RNN   利用递归神经网络（RNN），提出一种潜在因素，这个因素整合了相继参观兴趣点和用户偏好到推荐POI中。首先，采用词嵌入技术，将每个兴趣点转变为潜在向量，然后，RNN用于根据用户得到历史登记记录来推荐POI，适用于大数据集
+ 
+RNN成功的适用于处理顺序数据
